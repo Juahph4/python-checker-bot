@@ -7,4 +7,3 @@ dnspython
 pymongo[srv]
 requests
 bs4
-env
