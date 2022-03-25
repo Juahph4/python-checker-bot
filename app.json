@@ -32,6 +32,10 @@
             "description": "Redis endpoint password, from redislabs.com",
             "value": ""
         },
+        "BOT_TOKEN": {
+            "description": "Bot Token, from Botfhater",
+            "value": ""
+        },
         "PORT": {
             "description": "Redis Port",
             "value": "",
