@@ -16,9 +16,8 @@
     "env": {
         "APP_ID": {
             "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": "", 
-            "required": false
-        },
+            "value": "" 
+           },
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
