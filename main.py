@@ -13,13 +13,15 @@ from pyrogram.errors import BadRequest
 
 logging.basicConfig(level=logging.INFO)
 
-
+APP_ID = os.environ["APP_ID"]
+API_HASH = os.environ["API_HASH"]
+BOT_TOKEN = os.environ["BOT_TOKEN"]
 
 bot = Client(
     'bot',
     api_id= API_ID, #get it from https://my.telegram.org/auth
-    api_hash="API_HASH", #get it from https://my.telegram.org/auth
-    bot_token="BOT_TOKEN", #get it from @Botfather
+    api_hash=API_HASH, #get it from https://my.telegram.org/auth
+    bot_token=BOT_TOKEN, #get it from @Botfather
     plugins=dict(root="plugins"),
     parse_mode="html")
 
