@@ -42,14 +42,16 @@ import random
 import bs4
 import json
 
-
-mongourl = 'MONGO_URI'
+REDIS_URI = os.environ["REDIS_URI"]
+PORT = os.environ["REDIS_PORT"];
+mongourl = os.environ['MONGO_URI']
+REDIS_PASS = os.environ['REDIS_PASS']
 client = pymongo.MongoClient(mongourl,serverSelectionTimeoutMS=5000)
 maindb = client.bot['main']
 
-antidb = redis.Redis(host='REDIS_URI', port=REDIS_PASS, password='REDIS_PASS')
+antidb = redis.Redis(host=REDIS_URI, port=PORT, password=REDIS_PASS)
 
-BOT_USERNAME = 'BOT_USERNAME'
+BOT_USERNAME = os.environ['BOT_USERNAME']
 loggp = -735069168
 waste_cards = [1,2,7,8,9,0]
 banned_bins = open('files/bannedbin.txt', 'r').readlines()
