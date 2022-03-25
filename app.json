@@ -12,43 +12,16 @@
     "website": "https://t.me",
     "success_url": "https://t.me/",
     "stack": "container",
-    "env": {
-    "APP_ID": {
-            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
-            "value": ""
-        },
-     "API_HASH": {
-            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
-            "value": ""
-        },
-      "REDIS_URI": {
-            "description": "Redis endpoint URL, from redislabs.com",
-            "value": ""
-        },
-        
-     
-        "REDIS_PASS": {
-            "description": "Redis endpoint password, from redislabs.com",
-            "value": ""
-        },
-        
-        "PORT": {
-            "description": "Redis PORT, from redislabs.com",
-            "value": ""
-        },
-        
-         "BOT_TOKEN": {
-            "description": "Token from Your Bot",
-            "value": ""
-        },
-        
-         "MONGO_URI": {
-            "description": "MONGO_URI from MongoDb",
-            "value": ""
-        },
-        
-        
+     "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
     },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "5"
+    }
+  }
     "formation": {
         "Jocasta": {
             "quantity": 1,
