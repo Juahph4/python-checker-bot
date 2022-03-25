@@ -14,7 +14,7 @@
     "success_url": "https://t.me/TheUltroid",
     "stack": "container",
     "env": {
-        "API_ID": {
+        "APP_ID": {
             "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
             "value": "", 
             "required": false
@@ -24,28 +24,14 @@
             "value": "",
             "required": false
         },
-        "SESSION": {
-            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
-            "value": ""
-        },
         "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
             "value": ""
         },
-        "REDIS_PASSWORD": {
+        "REDIS_PASS": {
             "description": "Redis endpoint password, from redislabs.com",
             "value": ""
         },
-        "HEROKU_API": {
-            "description": "Heroku API token. Mandatory for Heroku Deploy...",
-            "value": "",
-            "required": false
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Name of your Heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
-            "value": "",
-            "required": false
-        }
     },
     "formation": {
         "ultroid": {
