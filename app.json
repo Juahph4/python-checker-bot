@@ -1,7 +1,7 @@
 {
     "name": "Jocasta -V Heroku",
     "description": "Telegram",
-    "logo": "https://telegra.ph/file/031957757a4f6a5191040.jpg",
+    "logo": "https://www.adslzone.net/app/uploads-adslzone.net/2020/08/aperTelegram.jpg?x=480&y=375&quality=40",
     "keywords": [
         "Telethon",
         "telegram",
@@ -13,6 +13,52 @@
     "success_url": "https://t.me/",
     "stack": "container",
     "env": {
-    
+    "APP_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "", 
+            "required": true
+        },
+     "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "",
+            "required": true
+        },
+      "REDIS_URI": {
+            "description": "Redis endpoint URL, from redislabs.com",
+            "value": "",
+            "required": true
+        },
+        
+     
+        "REDIS_PASS": {
+            "description": "Redis endpoint password, from redislabs.com",
+            "value": "",
+            "required": true
+        },
+        
+        "PORT": {
+            "description": "Redis PORT, from redislabs.com",
+            "value": "",
+            "required": true
+        },
+        
+         "BOT_TOKEN": {
+            "description": "Token from Your Bot",
+            "value": "",
+            "required": true
+        },
+        
+         "MONGO_URI": {
+            "description": "MONGO_URI from MongoDb",
+            "value": "",
+            "required": true
+        },
+        
+        
     },
+    "formation": {
+        "Jocasta": {
+            "quantity": 1,
+            "size": "free"
+        }
 }
