@@ -21,24 +21,24 @@
         "API_HASH": {
             "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
             "value": "",
-        },
+           },
         "REDIS_URI": {
             "description": "Redis endpoint URL, from redislabs.com",
             "value": ""
-        },
+           },
         "REDIS_PASS": {
             "description": "Redis endpoint password, from redislabs.com",
             "value": ""
-        },
+           },
         "BOT_TOKEN": {
             "description": "Bot Token, from Botfhater",
             "value": ""
-        },
+          },
         "PORT": {
             "description": "Redis Port",
             "value": "",
             "required": false
-        }
+          }
     },
     "formation": {
         "ultroid": {
